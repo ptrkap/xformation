@@ -1,3 +1,5 @@
+-- please let me know if you need complete sql script for a review purpose
+
 create view Country_City as
 	select co.CountryID as Country_CountryID,
 			 co.Name as Country_Name,

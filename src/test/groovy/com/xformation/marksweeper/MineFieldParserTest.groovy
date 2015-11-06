@@ -9,7 +9,7 @@ class MineFieldParserTest extends Specification {
 
     def mineFieldParser = new MineFieldParser();
 
-    def "should create mine field"() {
+    def "should create mine-field"() {
         given:
         def mineFieldString = "*...\n..*.\n...."
 
@@ -24,7 +24,7 @@ class MineFieldParserTest extends Specification {
         ]
     }
 
-    def "should throw IllegalArgumentException because of not properly formatted mine field string - rows length varies"() {
+    def "should throw IllegalArgumentException because of not properly formatted mine-field string - rows length varies"() {
         when:
         mineFieldParser.parse(mineFieldString)
 
@@ -40,7 +40,7 @@ class MineFieldParserTest extends Specification {
         ]
     }
 
-    def "should throw IllegalArgumentException because of not properly formatted mine field string - unexpected chars"() {
+    def "should throw IllegalArgumentException because of not properly formatted mine-field string - unexpected chars"() {
         when:
         mineFieldParser.parse(mineFieldString)
 

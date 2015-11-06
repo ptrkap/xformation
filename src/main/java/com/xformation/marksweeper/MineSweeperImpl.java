@@ -18,10 +18,4 @@ public class MineSweeperImpl implements MineSweeper {
         HintFieldGenerator hintFieldGenerator = new HintFieldGenerator();
         return hintFieldGenerator.generate(mineField);
     }
-
-    public static void main(String[] args) {
-        MineSweeper mineSweeper = new MineSweeperImpl();
-        mineSweeper.setMineField("*...\n..*.\n....");
-        System.out.println(mineSweeper.getHintField());
-    }
 }

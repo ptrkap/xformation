@@ -9,7 +9,7 @@ class HintFieldGeneratorTest extends Specification {
 
     def hintFieldGenerator = new HintFieldGenerator();
 
-    def "should generate hint field string"() {
+    def "should generate hint-field string"() {
         given:
         char[][] mineField = [
                 ['*', '.', '.', '.'],
@@ -24,7 +24,7 @@ class HintFieldGeneratorTest extends Specification {
         hintFieldsString == "*211\n12*1\n0111"
     }
 
-    def "should throw IllegalStateException because of not initialized mine field"() {
+    def "should throw IllegalStateException because of not initialized mine-field"() {
         when:
         hintFieldGenerator.generate(null)
 
