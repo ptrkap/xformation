@@ -1,4 +1,4 @@
--- please let me know if you need complete sql script for a review purpose
+use XF;
 
 create view Country_City as
 	select co.CountryID as Country_CountryID,
@@ -23,7 +23,7 @@ create view Country_City_Building as
 		 b.Floors as Building_Floors,
 		 b.CityID as Building_CityID
 	from Country_City cc left outer join Building b on
-		b.cityID = cc.City_CityID;ithub
+		b.cityID = cc.City_CityID;
 
 
 -- 1.
